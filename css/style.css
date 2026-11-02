@@ -282,3 +282,19 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+
+/* Instagram links (contact sections) */
+.socials { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: -8px 0 28px; }
+.socials span { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.socials a {
+  text-decoration: none; font-size: 14px; font-weight: 600; padding: 7px 14px; border-radius: 99px;
+  border: 1px solid var(--line); transition: border-color .2s, color .2s;
+}
+.socials a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Founder photo label on the homepage */
+.home-hero .portrait { position: relative; }
+.portrait-tag {
+  position: absolute; left: 14px; bottom: 14px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  background: var(--ink); color: var(--bg); padding: 7px 12px; border-radius: 99px;
+}
