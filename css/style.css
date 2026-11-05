@@ -307,3 +307,51 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 .split .illus { height: auto; max-width: 440px; }
 .menu-list span { display: inline-flex; align-items: center; gap: 14px; }
 .jar-ico { width: 22px; height: 31px; flex: none; }
+
+/* ---------- Editorial rows (services, programs, experience) ---------- */
+.rows { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+.rows li {
+  display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1.1fr) 32px; gap: 8px 32px; align-items: baseline;
+  padding: 26px 0; border-bottom: 1px solid var(--line); transition: padding .35s ease, color .2s;
+}
+.rows.rows-plain li { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) 32px; }
+.rows .k { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.rows h3 { font-size: clamp(24px, 3vw, 38px); font-weight: 800; letter-spacing: -.02em; line-height: 1.05; }
+.rows p { margin: 0; color: var(--muted); }
+.rows .arrow { justify-self: end; font-size: 22px; color: var(--accent); opacity: 0; transform: translateX(-8px); transition: opacity .25s, transform .25s; }
+.rows li:hover { padding-left: 14px; }
+.rows li:hover .arrow { opacity: 1; transform: none; }
+@media (max-width: 760px) {
+  .rows li, .rows.rows-plain li { grid-template-columns: minmax(0, 1fr); padding: 22px 0; }
+  .rows .arrow { display: none; }
+}
+
+/* ---------- Staircase steps (Sea Moss) ---------- */
+.stairs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); align-items: end; }
+.stairs li {
+  position: relative; margin-bottom: calc(var(--i) * 56px);
+  padding: 22px 24px 0 0; border-top: 5px solid var(--accent);
+}
+.stairs li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+.stairs .n {
+  position: absolute; bottom: 100%; left: 0; line-height: .8; margin-bottom: 10px;
+  font-family: var(--font-display); font-weight: 900; font-size: clamp(80px, 9vw, 130px);
+  color: transparent; -webkit-text-stroke: 2px var(--accent);
+}
+.stairs li + li .n { left: 24px; }
+.stairs h3 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+.stairs p { margin: 0; color: var(--muted); }
+.stairs { padding-top: clamp(90px, 10vw, 140px); }
+@media (max-width: 760px) {
+  .stairs { grid-template-columns: 1fr; padding-top: 0; gap: 28px; }
+  .stairs li, .stairs li + li {
+    margin: 0 0 0 calc(var(--i) * 18px); padding: 0 0 0 76px; border: 0; border-left: 4px solid var(--accent); min-height: 72px;
+  }
+  .stairs .n, .stairs li + li .n { bottom: auto; top: -4px; left: 14px; font-size: 64px; margin: 0; }
+}
+
+/* Photo + text without a box (Personal Brand interests) */
+.plain { display: grid; gap: 10px; align-content: start; }
+.plain .ph, .plain .photo { margin-bottom: 6px; }
+.plain h3 { font-size: 22px; font-weight: 800; }
+.plain p { margin: 0; color: var(--muted); font-size: 16px; }
