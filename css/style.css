@@ -296,3 +296,8 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 /* Photos placed where a .ph slot was */
 .photo { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
 .photo[style*="aspect-ratio"] { height: auto; }
+
+/* Sea moss price list */
+.menu-list { list-style: none; margin: 24px 0 8px; padding: 0; border-top: 1px solid var(--line); }
+.menu-list li { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px; }
+.menu-list strong { color: var(--accent); white-space: nowrap; }
