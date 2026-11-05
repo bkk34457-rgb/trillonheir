@@ -301,3 +301,9 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 .menu-list { list-style: none; margin: 24px 0 8px; padding: 0; border-top: 1px solid var(--line); }
 .menu-list li { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px; }
 .menu-list strong { color: var(--accent); white-space: nowrap; }
+
+/* Sea moss illustrations */
+.illus { display: block; width: 100%; height: 100%; }
+.split .illus { height: auto; max-width: 440px; }
+.menu-list span { display: inline-flex; align-items: center; gap: 14px; }
+.jar-ico { width: 22px; height: 31px; flex: none; }
