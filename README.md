@@ -9,7 +9,7 @@ Multi-page portfolio site for Trillonheir (Abdur-Rahmaan Archer). Plain HTML/CSS
 | `index.html` | Home — picture tiles linking to each brand | Cream / black |
 | `real-estate.html` | Listings, portfolio, services, inquiry | Green / red |
 | `basketball.html` | Journey, academy, coaching, programs | Black / yellow |
-| `cmos.html` | Intro, projects, services, inquiry | Blue / pink |
+| `sea-moss.html` | Intro, projects, services, inquiry | Blue / pink |
 | `personal-brand.html` | Style, lifestyle, interests, mood board | Sand / black |
 
 ## Updating
@@ -21,6 +21,6 @@ Multi-page portfolio site for Trillonheir (Abdur-Rahmaan Archer). Plain HTML/CSS
 
 ## Still to fill in
 
-- Real CMOS description, services and projects (current copy is a draft).
+- Sea Moss product names, flavours, sizes and prices (current copy is a draft).
 - Real property listings (current ones are samples).
 - All photos.

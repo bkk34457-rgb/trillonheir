@@ -1,7 +1,7 @@
 /* =========================================================
    TRILLONHEIR — shared styles
    Each page sets a theme class on <body>:
-     .t-home  .t-realestate  .t-basketball  .t-cmos  .t-personal
+     .t-home  .t-realestate  .t-basketball  .t-seamoss  .t-personal
    Change a page's colours by editing its block below.
    ========================================================= */
 
@@ -22,7 +22,7 @@
   --bg: #0c0c0c; --bg-2: #181818; --ink: #f5f3ee; --muted: #a29f97;
   --accent: #ffd21f; --accent-ink: #0c0c0c; --line: rgba(255,255,255,.12);
 }
-.t-cmos { /* blue with pink accents */
+.t-seamoss { /* blue with pink accents */
   --bg: #0b1a4a; --bg-2: #112562; --ink: #eef1ff; --muted: #9fabd6;
   --accent: #ff6fb1; --accent-ink: #0b1a4a; --line: rgba(255,255,255,.14);
 }
@@ -245,7 +245,7 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 .tile:hover .go { transform: rotate(-45deg); }
 .tile.re { --t-bg: #0f3a2c; --t-accent: #e5483f; }
 .tile.bb { --t-bg: #0c0c0c; --t-accent: #ffd21f; }
-.tile.cm { --t-bg: #0b1a4a; --t-accent: #ff6fb1; }
+.tile.sm { --t-bg: #0b1a4a; --t-accent: #ff6fb1; }
 .tile.pb { --t-bg: #2a2520; --t-accent: #ebe5d9; }
 @media (max-width: 700px) { .tiles { grid-template-columns: 1fr; } .tile { aspect-ratio: 4/4.4; } }
 
@@ -292,3 +292,7 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   position: absolute; left: 14px; bottom: 14px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
   background: var(--ink); color: var(--bg); padding: 7px 12px; border-radius: 99px;
 }
+
+/* Photos placed where a .ph slot was */
+.photo { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
+.photo[style*="aspect-ratio"] { height: auto; }
